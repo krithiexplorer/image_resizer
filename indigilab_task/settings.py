@@ -135,8 +135,26 @@ cloudinary.config(
   api_key = "859246595573951",
   api_secret = "jVm7RRKxzhvbfzNUsw_Y1o5elnU"
 )
+CLOUDINARY_URL = 'cloudinary://{}:{}@{}'.format(
+    '859246595573951',
+    'jVm7RRKxzhvbfzNUsw_Y1o5elnU',
+    'dbgciyvr2'
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+MEDIA_ROOT = 'cloudinary://{}:{}@{}/{}'.format(
+    '859246595573951',
+    'jVm7RRKxzhvbfzNUsw_Y1o5elnU',
+    'dbgciyvr2',
+    'resized_images'
+)
+
+MEDIA_URL = 'http://res.cloudinary.com/{}/{}/'.format(
+    'dbgciyvr2',
+    'resized_images'
+)
