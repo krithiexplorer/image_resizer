@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('image_resizer.urls')),
     path('resize_image/',include('image_resizer.urls')),
-    path('resize_bulk/',include('image_resizer.urls'))
+    path('resize_bulk/',include('image_resizer.urls')),
+    path('download_images/',include('image_resizer.urls'))
 ]

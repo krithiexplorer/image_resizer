@@ -21,36 +21,13 @@
             padding:50px;
         }
     </style>
-    <!--<script>
-        const downloadButton = document.createElement("button");
-        downloadButton.innerHTML = "Download All Images";
-        document.body.appendChild(downloadButton);
 
-        // Add an event listener to the button to handle clicks
-        downloadButton.addEventListener("click", downloadImages);
-
-        function downloadImages() {
-        // Find all the images on the page
-        const images = document.querySelectorAll("img");
-
-        // Create an anchor element for each image
-        images.forEach(img => {
-            const a = document.createElement("a");
-            a.style.display = "none";
-            a.href = img.src;
-            a.download = img.src.split("/").pop();
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-        });
-        }
-    </script>-->
 </head>
 <body class="all">   
     <div class="vh-100 d-flex justify-content-center align-items-center">
         <div class="shadow inputbox bg-light">
             <h4>Resize all the images in your folder</h4>
-            <form action="resize_bulk" method="post" enctype="multipart/form-data">
+            <form method="post" enctype="multipart/form-data">
                 {% csrf_token %}
                 <label for="ctrl">Choose folder:</label>
                 <input name="image" class="form-control" type="file" id="formFileMultiple" multiple>

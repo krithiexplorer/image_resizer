@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-    <div class="vh-100 d-flex justify-content-center align-items-center bg-primary">
+    <div class="d-flex justify-content-center align-items-center bg-primary">
         <div class="inputbox bg-white border-box">
             <div class="d-flex justify-content-center">
                 <h1>Here are your resized images!!</h1>
@@ -27,7 +27,7 @@
                 <img class="img" src = {{img}}>
             {% endfor %}
             <div class="d-flex justify-content-center" style="margin-top:20px;">
-                <button class="btn btn-primary">Download Images</button>       
+                <a href="{% url 'download_images' %}"><button class="btn btn-primary">Download Images</button></a>       
             </div>    
         </div>
     </div>
