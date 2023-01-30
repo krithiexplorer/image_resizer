@@ -15,7 +15,7 @@ Tech stack used for multiple image resize:
 4.Bootstrap
 
 Contributors:
-Kiruthiga K - Resizing multiple images
+Kiruthiga K - Resizing multiple images ,
 Prithika N G - Resizing single image
 
 Demo video link:
